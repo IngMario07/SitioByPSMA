@@ -67,7 +67,7 @@ export const Inicio = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        Salvando vidas, transformando historias.
+                        ¡Vamos Por Una Asociacion De Bomberos Y Paramedicos Al Nivel Que Nuestra Ciudad Se Merece!
                     </motion.p>
                     <motion.div
                         className="mt-8 flex justify-center items-center"
