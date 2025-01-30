@@ -67,7 +67,7 @@ export const Nosotros = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.5 }}
                         >
-                            Fundada en 2021, ByPSMA comenzó con un pequeño grupo de voluntarios comprometidos con la seguridad y el bienestar de la comunidad. A pesar de contar con recursos limitados, nuestra dedicación nos permitió crecer rápidamente, consolidándonos como una pieza clave en la respuesta a emergencias de San Miguel de Allende. Con el paso del tiempo, logramos adquirir nuevas unidades, capacitar a más rescatistas y expandir nuestra capacidad operativa. Hoy en día, seguimos trabajando arduamente para mejorar y garantizar un servicio digno para nuestra ciudad.
+                            Fundada en 2022, ByPSMA comenzó con un pequeño grupo de voluntarios comprometidos con la seguridad y el bienestar de la comunidad. A pesar de contar con recursos limitados, nuestra dedicación nos permitió crecer rápidamente, consolidándonos como una pieza clave en la respuesta a emergencias de San Miguel de Allende. Con el paso del tiempo, logramos adquirir nuevas unidades, capacitar a más rescatistas y expandir nuestra capacidad operativa. Hoy en día, seguimos trabajando arduamente para mejorar y garantizar un servicio digno para nuestra ciudad.
                             <br />
                             <br />
                             ¡Hoy más que nunca, seguimos avanzando en nuestra misión de salvar vidas, y gracias al apoyo de la comunidad, estamos más cerca de lograrlo!
@@ -85,7 +85,7 @@ export const Nosotros = () => {
                         >
                         </motion.h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                            {[{ year: "2022", img: ByP00, text: "Primera unidad prestada por el Dr. Martín Carrera para brindar servicios cuando aún no contábamos con equipo propio. Este gesto de solidaridad marcó el inicio de nuestra lucha por tener nuestro propio equipo de respuesta." },
+                            {[{ year: "2022", img: ByP00, text: "Primera unidad prestada por el Dr. Alberto Carrera para brindar servicios cuando aún no contábamos con equipo propio. Este gesto de solidaridad marcó el inicio de nuestra lucha por tener nuestro propio equipo de respuesta." },
                             { year: "2022", img: Unidades1, text: "Se otorgaron dos unidades (ByP01 y ByP02) y un espacio provisional para la estación gracias a gestiones con el gobierno local. Estas unidades permitieron fortalecer nuestra capacidad operativa en situaciones de emergencia." },
                             { year: "2023", img: Dragones1, text: "Creación del grupo infantil 'Dragones' para educar a niños en temas de emergencia y formación en primeros auxilios. Este proyecto buscó sensibilizar a las nuevas generaciones sobre la importancia de la seguridad y la prevención." },
                             { year: "2023", img: ByP03, text: "Adquisición de ByP03 con fondos de donaciones y eventos comunitarios. Gracias al apoyo de la comunidad y las recaudaciones, pudimos fortalecer nuestras unidades y responder más rápidamente a los incidentes." },
@@ -153,7 +153,7 @@ export const Nosotros = () => {
                                 <li>Definir los lineamientos generales de operación y servicio.</li>
                                 <li>Revisar informes anuales sobre el desempeño y crecimiento de la Asociación.</li>
                             </ul>
-                            Actualmente, la Asamblea está conformada por más de 15 personas que han trabajado activamente en el desarrollo de la Asociación y la consolidación de sus operaciones en San Miguel de Allende.
+                            Actualmente, la Asamblea está conformada por más de 35 Bomberos que han trabajado activamente en el desarrollo de la Asociación y la consolidación de sus operaciones en San Miguel de Allende.
                         </motion.p>
                     </div>
                 </div>
@@ -173,11 +173,11 @@ export const Nosotros = () => {
                             <br /><br />
                             <strong>Miembros del Consejo Directivo:</strong>
                             <ul className="text-left max-w-3xl mx-auto list-disc list-inside mt-4">
-                                <li><strong>Presidente:</strong> Carlos Arzola – Encargado de representar a la Asociación ante instituciones gubernamentales y organizaciones privadas, además de supervisar el cumplimiento de los objetivos estratégicos.</li>
-                                <li><strong>Secretario:</strong> Canales – Responsable de la documentación oficial, organización de reuniones y gestión administrativa de la Asociación.</li>
+                                <li><strong>Presidente:</strong> Carlos Arzola – Representate legal de la Asociación ante instituciones gubernamentales y organizaciones privadas, además de supervisar el cumplimiento de los objetivos estratégicos.</li>
+                                <li><strong>Secretario:</strong> Felipe Canales – Responsable de la documentación oficial, organización de reuniones y gestión administrativa de la Asociación.</li>
                                 <li><strong>Tesorero:</strong> César Guerrero – Maneja los recursos financieros, elabora informes contables y garantiza la transparencia en el manejo de donaciones y fondos.</li>
                                 <li><strong>Jefe de Bomberos:</strong> Juan González – Dirige al equipo operativo, supervisa las capacitaciones y coordina las respuestas a emergencias.</li>
-                                <li><strong>Coordinador de Capacitación:</strong> (N/D) – Responsable de organizar cursos y talleres para la comunidad y los miembros de la Asociación.</li>
+                                <li><strong>Coordinador de Capacitación:</strong> Olavo Francisco Perez – Responsable de organizar cursos y talleres para la comunidad y los miembros de la Asociación.</li>
                             </ul>
                             Gracias a la estructura organizativa establecida, la Asociación sigue creciendo y consolidándose como una institución clave en la respuesta a emergencias en San Miguel de Allende.
                         </motion.p>
