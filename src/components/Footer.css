@@ -1,0 +1,143 @@
+.footer {
+    background: #1e1e1e;
+    padding: 20px 0;
+    color: #e0e0e0;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.85rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contenedor principal */
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* Sección superior */
+.footer-top {
+    margin-bottom: 20px;
+    display: flex; /* Usamos flexbox para alinear el logo y el texto */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 15px; /* Espacio entre el logo y el texto */
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+}
+
+.footer-logo {
+    max-height: 50px;
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    color: transparent;
+    background-image: linear-gradient(45deg, #FF5722, #FF9800, #FFEB3B);
+    background-size: 300%;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: flameAnimation 2s infinite linear;
+}
+
+/* Animación de llamas */
+@keyframes flameAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Enlaces y redes sociales */
+.footer-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #e0e0e0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #D32F2F;
+    transform: translateY(-3px);
+}
+
+/* Línea divisoria */
+.footer-divider {
+    border-left: 2px solid #fff;
+    height: 40px;
+}
+
+/* Créditos y copyright */
+.footer-credit {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Redes sociales */
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social-icon {
+    color: #e0e0e0;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+.footer-social-icon:hover {
+    transform: scale(1.1);
+    color: #D32F2F; /* Cambiar color en hover */
+}
+
+/* Sección inferior */
+.footer-bottom {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .footer-credit {
+        font-size: 0.8rem;
+    }
+
+    .footer-social-icon {
+        font-size: 20px; /* Reducción del tamaño de los íconos en móviles */
+    }
+}

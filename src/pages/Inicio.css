@@ -1,0 +1,41 @@
+/* Clase personalizada para la imagen de bienvenida */
+.bienvenida-img {
+    width: 100%;
+    max-width: 100%; /* La imagen no debe superar el tamaño del contenedor */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+    object-fit: contain; /* Mantener la proporción de la imagen sin deformarla */
+    margin-bottom: 0; /* Quitar márgenes innecesarios */
+    display: block; /* Aseguramos que la imagen sea un bloque */
+    margin-left: auto; /* Centrado horizontal */
+    margin-right: auto; /* Centrado horizontal */
+}
+
+/* Establecer un máximo de altura para la imagen en pantallas pequeñas */
+@media (max-width: 768px) {
+    .bienvenida-img {
+        max-height: 300px; /* Ajustar la altura máxima de la imagen */
+    }
+}
+
+/* Aseguramos que todo el texto en la página sea blanco */
+.text-white {
+    color: white !important; /* Aplicamos color blanco con alta prioridad */
+}
+
+/* Fondo con gradiente para la imagen */
+.bg-gradient-to-t {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+/* Para asegurar que el contenido adicional esté centrado y se vea bien en todas las pantallas */
+.text-center {
+    text-align: center;
+}
+
+/* Fondo oscuro para la sección principal */
+body {
+    background-color: #1a202c; /* Fondo general más oscuro */
+    color: white; /* Texto blanco por defecto */
+}

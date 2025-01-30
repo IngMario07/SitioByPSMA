@@ -1,0 +1,40 @@
+/* Elimina la duplicación de la propiedad para body y asegúrate de que se aplique correctamente */
+body {
+    background-color: #1a202c;
+    color: white;
+}
+
+/* Estilo para el mapa */
+iframe {
+    border-radius: 10px;
+}
+
+/* Estilo de los iconos de redes sociales */
+a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo del contenedor de número de emergencia */
+.bg-red-600 {
+    background-color: #f56565;
+}
+
+/* Estilo de texto */
+.text-white {
+    color: white !important;
+}
+
+/* Texto centralizado */
+.text-center {
+    text-align: center;
+}
+
+/* Fondo oscuro para la sección principal */
+.w-full {
+    background-color: #1a202c; /* Fondo oscuro general */
+}

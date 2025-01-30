@@ -1,0 +1,123 @@
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #FFD700, #FF6347); /* Fondo cálido y alegre */
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Fuente estilizada */
+}
+
+.navbar:hover {
+    background: linear-gradient(to right, #FFC107, #FF4500); /* Hover más vibrante */
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    align-items: center;
+}
+
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    max-height: 50px; /* Controla el tamaño del logo */
+}
+
+.navbar-links-container {
+    display: flex;
+    justify-content: center; /* Centrar los enlaces */
+    gap: 2rem; /* Espaciado entre enlaces */
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links a {
+    color: #FFFFFF; /* Blanco para el texto por defecto */
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #1E90FF; /* Azul llamativo para el hover */
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 5px rgba(30, 144, 255, 0.6); /* Sombra azul */
+}
+
+.navbar-links a:active {
+    transform: translateY(1px);
+}
+
+/* Ícono de menú hamburguesa */
+.hamburger {
+    display: none; /* Ocultar en pantallas grandes */
+}
+
+/* Responsividad: Navbar */
+@media (max-width: 768px) {
+    .navbar-container {
+        justify-content: space-between; /* Para alinear el ícono a la izquierda en móvil */
+    }
+
+    .navbar-links {
+        display: none; /* Ocultar enlaces por defecto en móvil */
+        flex-direction: column;
+        align-items: center; /* Centrar enlaces en móvil */
+        gap: 1.5rem;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: linear-gradient(to right, #FFD700, #FF6347); /* Mismo fondo en móvil */
+        padding: 1.5rem;
+        border-radius: 5px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-links.active {
+        display: flex; /* Mostrar enlaces al abrir el menú */
+    }
+
+    .hamburger {
+        display: block; /* Mostrar el ícono en pantallas pequeñas */
+        cursor: pointer;
+        font-size: 2.5rem;
+        color: #FFFFFF; /* Blanco para contraste */
+    }
+
+    .navbar-links a {
+        font-size: 1.5rem; /* Ajustar tamaño de enlaces en móvil */
+    }
+}
+
+/* Animación de aparición */
+.navbar {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

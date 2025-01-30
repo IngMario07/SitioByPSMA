@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fuente personalizada para todo el sitio */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos específicos para la página de contacto */
+.contact-page * {
+    color: white; /* Cambiar todo el texto a blanco en la página de contacto */
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page p {
+    color: white; /* Asegura que los títulos y párrafos sean blancos */
+}
+
+/* Estilos generales para los contenedores */
+.custom-content {
+    color: white; /* Texto blanco solo dentro de este contenedor */
+}
+
+/* Estilo para la imagen de bienvenida */
+.custom-content .bienvenida-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradiente de fondo solo para custom-content */
+.custom-content .bg-gradient-to-t {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+/* Estilo centrado para el contenido adicional */
+.custom-content.text-center {
+    text-align: center;
+}
+
+/* Fondo general */
+body {
+    background-color: #1a202c;
+    color: white;
+}
