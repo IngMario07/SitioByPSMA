@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'; // Importar íconos de React Icons
-import './footer.css';
+import './Footer.css';
 import LogoSF from "../assets/images/LogoSF.png";
 
 export function Footer() {

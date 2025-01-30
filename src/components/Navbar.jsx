@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import './navbar.css';
+import './Navbar.css';
 import LogoSF from "../assets/images/LogoSF.png"; // Asegúrate de tener la ruta correcta del logo
 
 export function Navbar() {
