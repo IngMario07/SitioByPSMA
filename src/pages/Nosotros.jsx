@@ -174,10 +174,11 @@ export const Nosotros = () => {
                             <strong>Miembros del Consejo Directivo:</strong>
                             <ul className="text-left max-w-3xl mx-auto list-disc list-inside mt-4">
                                 <li><strong>Presidente:</strong> Carlos Arzola – Representate legal de la Asociación ante instituciones gubernamentales y organizaciones privadas, además de supervisar el cumplimiento de los objetivos estratégicos.</li>
-                                <li><strong>Secretario:</strong> Felipe Canales – Responsable de la documentación oficial, organización de reuniones y gestión administrativa de la Asociación.</li>
+                                <li><strong>Secretario:</strong> Felipe Huberto Canales – Responsable de la documentación oficial, organización de reuniones y gestión administrativa de la Asociación.</li>
                                 <li><strong>Tesorero:</strong> César Guerrero – Maneja los recursos financieros, elabora informes contables y garantiza la transparencia en el manejo de donaciones y fondos.</li>
                                 <li><strong>Jefe de Bomberos:</strong> Juan González – Dirige al equipo operativo, supervisa las capacitaciones y coordina las respuestas a emergencias.</li>
                                 <li><strong>Coordinador de Capacitación:</strong> Olavo Francisco Perez – Responsable de organizar cursos y talleres para la comunidad y los miembros de la Asociación.</li>
+                                <li><strong>Comisario:</strong> Mario C. Morales – Encargado de la supervisión y vigilancia del cumplimiento normativo y ético dentro de la Asociación, asegurando la transparencia y el correcto funcionamiento de la misma.</li>
                             </ul>
                             Gracias a la estructura organizativa establecida, la Asociación sigue creciendo y consolidándose como una institución clave en la respuesta a emergencias en San Miguel de Allende.
                         </motion.p>
