@@ -12,12 +12,12 @@ export function Footer() {
     ];
 
     const routes = [
-        { ruta: '/home', titulo: 'Inicio' },
-        { ruta: '/contacto', titulo: 'Contacto' },
-        { ruta: '/donaciones', titulo: 'Donaciones' },
-        { ruta: '/nosotros', titulo: 'Nosotros' },
-        { ruta: '/servicios', titulo: 'Servicios' },
-        { ruta: '/colaboradores', titulo: 'Colaboradores' },
+        { ruta: '/home', titulo: 'HOME' },
+        { ruta: '/contacto', titulo: 'Contact' },
+        { ruta: '/donaciones', titulo: 'Donations' },
+        { ruta: '/nosotros', titulo: 'About Us' },
+        { ruta: '/servicios', titulo: 'Services' },
+        { ruta: '/colaboradores', titulo: 'Collaborators' },
     ];
 
     return (
@@ -45,13 +45,13 @@ export function Footer() {
                     </div>
                     <div className="footer-divider"></div>
                     <div className="footer-credit">
-                        <p>Elaborado por Ing. Kilian M</p>
+                        <p>Made by Ing. Kilian M</p>
                     </div>
                 </div>
 
                 {/* Sección de redes sociales */}
                 <div className="footer-bottom">
-                    <p>&copy; 2025 Todos los derechos reservados.</p>
+                    <p>&copy; 2025 All rights reserved.</p>
                     <div className="footer-social">
                         {redes.map((red, index) => (
                             <a href={red.link} key={index} target="_blank" rel="noopener noreferrer" className="footer-social-icon">

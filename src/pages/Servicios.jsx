@@ -30,7 +30,7 @@ export const Servicios = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        Nuestros Servicios
+                        Our Services
                     </motion.h1>
                     <motion.p
                         className="text-lg sm:text-xl text-gray-300 leading-relaxed text-center max-w-3xl"
@@ -38,7 +38,7 @@ export const Servicios = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        En Bomberos y Paramédicos SMA ofrecemos servicios esenciales para la seguridad y el bienestar de nuestra comunidad. Nos especializamos en la respuesta ante incendios y emergencias, además de brindar capacitaciones en primeros auxilios y soporte vital. Nuestro equipo está comprometido en ofrecer atención rápida y efectiva en situaciones críticas, salvaguardando la vida y salud de las personas. Además, acudimos a eventos de diversa índole, brindando soporte y seguridad para los asistentes.
+                        At Bomberos y Paramédicos SMA we offer essential services for the safety and well-being of our community. We specialize in fire and emergency response, in addition to providing training in first aid and life support. Our team is committed to provide fast and effective care in critical situations, safeguarding the life and health of people. In addition, we attend events of various kinds, providing support and security for attendees.
                     </motion.p>
                 </div>
 
@@ -50,7 +50,7 @@ export const Servicios = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                         >
-                            Servicio de Bomberos
+                            Fire Service
                         </motion.h2>
                         <motion.p
                             className="text-lg sm:text-xl text-gray-700 leading-relaxed text-center"
@@ -58,7 +58,7 @@ export const Servicios = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.5 }}
                         >
-                            Atendemos emergencias relacionadas con incendios, rescates y situaciones de riesgo. Nuestro equipo está altamente capacitado y equipado con tecnología avanzada para brindar una respuesta eficiente y segura. Nos aseguramos de actuar con rápidez para proteger la vida de las personas, prevenir daños materiales y minimizar los impactos de los incendios en nuestra comunidad. Además, estamos disponibles para asistir a eventos, ofreciendo seguridad y apoyo ante cualquier eventualidad.
+                            We attend emergencies related to fires, rescues and risk situations. Our team is highly trained and equipped with advanced technology to provide an efficient and safe response. We ensure that we act quickly to protect people's lives, prevent property damage and minimize the impact of fires on our community. In addition, we are available to attend events, offering security and support for any eventuality.
                         </motion.p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ export const Servicios = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                         >
-                            Emergencias Médicas
+                            Medical Emergencies
                         </motion.h2>
                         <motion.p
                             className="text-lg sm:text-xl text-gray-700 leading-relaxed text-center"
@@ -79,7 +79,7 @@ export const Servicios = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.5 }}
                         >
-                            Aunque no contamos con una ambulancia propia, brindamos atención primaria como primeros respondientes mientras arriba la unidad para continuar con la atencion. Contamos con Desfibriladores Externos Automáticos (DEAs) y equipo avanzado para asistir en situaciones críticas. Nuestra prioridad es estabilizar a los pacientes y asegurar su bienestar. También estamos presentes en eventos, garantizando la atención inmediata ante cualquier emergencia médica.
+                            Although we do not have our own ambulance, we provide primary care as first responders while the unit arrives to continue the care. We have Automated External Defibrillators (AEDs) and advanced equipment to assist in critical situations. Our priority is to stabilize patients and ensure their well-being. We are also present at events, guaranteeing immediate attention to any medical emergency.
                         </motion.p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ export const Servicios = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                         >
-                            Capacitación en Emergencias
+                            Emergency Training
                         </motion.h2>
                         <motion.p
                             className="text-lg sm:text-xl text-gray-700 leading-relaxed text-center"
@@ -100,7 +100,7 @@ export const Servicios = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.5 }}
                         >
-                            Ofrecemos capacitacion en primeros auxilios, uso y manejo de extintores, RCP, Stop The Bleed y para empresas, escuelas y la sociedad en general. Nuestra misión es empoderar a las personas con el conocimiento necesario para actuar en situaciones de emergencia. Estos cursos están diseñados para ser prácticos y accesibles, permitiendo que los participantes se preparen de manera efectiva para responder a incidentes en sus hogares, lugares de trabajo y en la vía pública. También podemos brindar capacitación en el marco de eventos, ayudando a los organizadores a garantizar la seguridad de los asistentes.
+                            We offer training in first aid, use and handling of fire extinguishers, CPR, Stop The Bleed and for companies, schools and society in general. Our mission is to empower people with the necessary knowledge to act in emergency situations. These courses are designed to be practical and accessible, allowing participants to effectively prepare themselves to respond to incidents in their homes, workplaces and on public roads. We can also provide training in the context of events, helping organizers to ensure the safety of attendees.
                         </motion.p>
                     </div>
                 </div>

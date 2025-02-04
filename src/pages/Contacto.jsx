@@ -55,7 +55,7 @@ export const Contacto = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Contacto
+                    CONTACT US
                 </motion.h1>
                 
                 <div className="mt-8 text-white text-center">
@@ -65,7 +65,8 @@ export const Contacto = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros.
+                        
+We are here to help you. Don't hesitate to contact us.
                     </motion.p>
                 </div>
 
@@ -79,7 +80,7 @@ export const Contacto = () => {
                         transition={{ duration: 1 }}
                     >
                         <FaPhoneAlt className="text-4xl mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">Llámanos A Nuestro Telefono Fijo</h3>
+                        <h3 className="text-2xl font-bold mb-2">Call us on our landline</h3>
                         <p className="text-lg">+52 (415) 688 1615</p>
                     </motion.div>
 
@@ -95,7 +96,7 @@ export const Contacto = () => {
                         transition={{ duration: 1 }}
                     >
                         <FaMapMarkerAlt className="text-4xl mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">Dirección</h3>
+                        <h3 className="text-2xl font-bold mb-2">Address</h3>
                         <p className="text-lg">Fray Bernardo Cossin 133-Int. 1, Insurgentes, 37745 San Miguel de Allende, Gto.</p>
                     </motion.div>
 
@@ -111,7 +112,7 @@ export const Contacto = () => {
                         transition={{ duration: 1 }}
                     >
                         <FaEnvelope className="text-4xl mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">Correo Electrónico</h3>
+                        <h3 className="text-2xl font-bold mb-2">Email</h3>
                         <p className="text-lg">bomberosyparamedicossma@gmail.com</p>
                     </motion.div>
 
@@ -127,7 +128,7 @@ export const Contacto = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1 }}
                     >
-                        <h3 className="text-2xl font-bold mb-2">Contáctanos por WhatsApp</h3>
+                        <h3 className="text-2xl font-bold mb-2">Contact us by WhatsApp</h3>
                         <a href="https://wa.me/+524151807211" target="_blank" rel="noopener noreferrer">
                             <FaWhatsapp className="text-8xl mb-4 text-[#25D366]" /> {/* Tamaño más grande y color verde */}
                         </a>

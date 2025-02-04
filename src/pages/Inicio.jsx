@@ -59,7 +59,7 @@ export const Inicio = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        Bienvenido a Bomberos y Paramédicos SMA
+                        Welcome to SMA Firefighters and Paramedics
                     </motion.h1>
                     <motion.p
                         className="text-lg sm:text-xl md:text-2xl mt-4 drop-shadow-lg text-gray-300"
@@ -67,7 +67,7 @@ export const Inicio = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        ¡Vamos Por Una Asociacion De Bomberos Y Paramedicos Al Nivel Que Nuestra Ciudad Se Merece!
+                        ¡We are going for an Association of Firefighters and Paramedics at the level that our city deserves!
                     </motion.p>
                     <motion.div
                         className="mt-8 flex justify-center items-center"
@@ -82,9 +82,9 @@ export const Inicio = () => {
                 {/* Tarjetas de valores principales */}
                 <div className="mt-16 px-8 md:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {[
-                        { icon: <FaHandsHelping />, title: "Ayuda Humanitaria", text: "Siempre listos para responder a emergencias y brindar apoyo donde más se necesita." },
-                        { icon: <FaUsers />, title: "Comunidad Unida", text: "Trabajamos juntos para construir un entorno más seguro y solidario." },
-                        { icon: <FaHeartbeat />, title: "Salvando Vidas", text: "Nuestro compromiso es proteger lo más valioso: la vida humana." },
+                        { icon: <FaHandsHelping />, title: "Humanitarian Aid", text: "Always ready to respond to emergencies and provide support where it is needed most." },
+                        { icon: <FaUsers />, title: "United Community", text: "We work together to build a safer and more supportive environment." },
+                        { icon: <FaHeartbeat />, title: "Saving Lives", text: "Our commitment is to protect what is most valuable: human life." },
                     ].map((card, index) => (
                         <motion.div
                             key={index}
@@ -103,19 +103,19 @@ export const Inicio = () => {
                 {/* Texto combinado de bienvenida */}
                 <div className="mt-16 px-8 md:px-16 text-center custom-content">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                        Compromiso Social
+                        Social Commitment
                     </h2>
                     <p className="text-lg leading-7 text-gray-300">
-                        Cada día es una oportunidad para marcar la diferencia y proteger lo más valioso: nuestra comunidad. Somos un equipo capacitado, comprometido y apasionado por cuidar y ofrecer esperanza en los momentos más difíciles.
+                        Every day is an opportunity to make a difference and protect what is most valuable: our community. We are a trained team, committed and passionate about caring and offering hope in the most difficult times.
                     </p>
                     <p className="text-lg mt-4 leading-7 text-gray-300">
-                        En Bomberos y Paramédicos SMA no solo respondemos a emergencias: también prevenimos, capacitamos y trabajamos junto a ti para construir un entorno más seguro.
+                        At SMA Firefighters and Paramedics we not only respond to emergencies: we also prevent, train and work with you to build a safer environment.
                     </p>
                     <p className="text-lg mt-4 leading-7 text-gray-300">
-                        Explora nuestro sitio para descubrir más sobre nuestros servicios, actividades, capacitaciones y cómo puedes formar parte de esta noble misión. ¡Gracias por confiar en nosotros y ser parte de nuestra historia!
+                        Explore our site to discover more about our services, activities, training and how you can be part of this noble mission. Thank you for trusting us and being part of our story!
                     </p>
                     <p className="text-lg mt-4 font-bold leading-7 text-gray-300">
-                        Estamos siempre listos, siempre a tu lado.
+                        We are always ready, always by your side.
                     </p>
                 </div>
             </div>

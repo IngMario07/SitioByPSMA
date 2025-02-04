@@ -38,7 +38,7 @@ export const Colaboradores = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        Página en construcción
+                        Page under construction
                     </motion.h1>
                     <motion.p
                         className="text-lg sm:text-xl text-gray-300 leading-relaxed text-center max-w-3xl"
@@ -46,7 +46,7 @@ export const Colaboradores = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        Estamos trabajando para ofrecerte una experiencia completa. ¡Gracias por tu paciencia!
+                        We are working to offer you a complete experience, thank you for your patience!
                     </motion.p>
 
                     {/* GIF de camión de bomberos en construcción */}

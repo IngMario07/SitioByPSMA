@@ -25,13 +25,14 @@ export function Navbar() {
 
                 <div className="navbar-links-container">
                     <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-                        <a href="/">Inicio</a>
-                        <a href="/contacto">Contacto</a>
-                        <a href="/donaciones">Donaciones</a>
-                        <a href="/nosotros">SOBRE NOSOTROS</a>
-                        <a href="/servicios">Servicios</a>
-                        <a href="/colaboradores">Colaboradores</a>
+                        <a href="/">HOME</a>
+                        <a href="/contacto">Contact</a>
+                        <a href="/donaciones">Donations</a>
+                        <a href="/nosotros">ABOUT US</a>
+                        <a href="/servicios">Services</a>
+                        <a href="/colaboradores">Collaborators</a>
                     </div>
+
                     <div className="hamburger" onClick={toggleMenu}>
                         ☰
                     </div>
