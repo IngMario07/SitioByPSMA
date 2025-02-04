@@ -85,7 +85,7 @@ export const Donaciones = () => {
                                 <p className="font-semibold">Name Bank: <span className="font-normal">BBVA</span></p>
                                 <p className="font-semibold">Account: <span className="font-normal">011 862 7339</span></p>
                                 <p className="font-semibold">CLABE: <span className="font-normal">012 240 00118627339 1</span></p>
-                                <p className="font-semibold">Holder's name: <span className="font-normal">Bomberos y Paramédicos SMA A C </span></p>
+                                <p className="font-semibold">Holder's name: <span className="font-normal">Bomberos y Paramédicos SMA AC </span></p>
                             </div>
                             <br />
                             <br />
