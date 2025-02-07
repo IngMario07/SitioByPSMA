@@ -44,7 +44,7 @@ export const Estadisticas = () => {
 
     // Datos de incendios
     const dataIncendios = {
-        labels: ['House Room / Casa Habitacion', 'Vehicle / Vehiculo', 'Pasture / Pastizal', 'Garbage / Basura', 'Tree / Arbol'],
+        labels: ['House Room', 'Vehicle', 'Pasture', 'Garbage', 'Tree'],
         datasets: [{
             label: 'Fires in January 2025 / Incendios en Enero 2025',
             data: [16, 6, 244, 4, 1],
@@ -56,7 +56,7 @@ export const Estadisticas = () => {
 
     // Datos de otros servicios
     const dataOtrosServicios = {
-        labels: ['Prehospital Services / Servicios Prehospitalarios', 'Hazardous Materials / Materiales Peligrosos', 'Traffic Events / Hechos de Tránsito', 'Urban Rescue / Rescate Urbano', 'Special Services / Servicios Especiales', 'Support to “Cruz Roja” / Apoyo a Cruz Roja'],
+        labels: ['Prehospital Services', 'Hazardous Materials', 'Traffic Events', 'Urban Rescue', 'Special Services', 'Support to “Cruz Roja”'],
         datasets: [{
             label: 'Services in January 2025 / Servicios en Enero 2025',
             data: [5, 25, 31, 11, 29, 2],
