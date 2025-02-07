@@ -119,9 +119,9 @@ export const Estadisticas = () => {
                     Statistics JANUARY 2025
                 </motion.h1>
 
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
 
                 <motion.h3
                     className="text-4xl sm:text-5xl font-bold text-center text-white"
@@ -136,7 +136,6 @@ export const Estadisticas = () => {
                 <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
                     <Bar data={dataIncendios} options={chartOptions} />
                 </div>
-
                 <br />
                 <br />
                 <br />
@@ -144,8 +143,6 @@ export const Estadisticas = () => {
                 <br />
                 <br />
                 <br />
-                
-
                 <motion.h3
                     className="text-4xl sm:text-5xl font-bold text-center text-white"
                     initial={{ opacity: 0, y: -50 }}
@@ -169,7 +166,7 @@ export const Estadisticas = () => {
                 <br />
                 <br />
                 <br />
-                
+
                 <motion.h3
                     className="text-4xl sm:text-5xl font-bold text-center text-white"
                     initial={{ opacity: 0, y: -50 }}
@@ -213,15 +210,69 @@ export const Estadisticas = () => {
             <br />
             <br />
 
+            <motion.h1
+                className="text-4xl sm:text-5xl font-bold text-center text-white"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
+                2025
+            </motion.h1>
+            <motion.h2
+                className="text-4xl font-semibold text-white mt-12"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
+                392 Services attended January 2025
+            </motion.h2>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
             {/* Noticias de servicios atendidos */}
             <motion.h1
-                    className="text-4xl sm:text-5xl font-bold text-center text-white"
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    2023
-                </motion.h1>
+                className="text-4xl sm:text-5xl font-bold text-center text-white"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
+                2024
+            </motion.h1>
+            <motion.h2
+                className="text-4xl font-semibold text-white mt-12"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
+                2,554 Services Provided
+            </motion.h2>
+            <motion.p
+                className="text-lg text-gray-300 leading-relaxed mt-4 max-w-3xl mx-auto"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+            >
+                In 2024 we exceeded expectations, reaching a total of 2,554 services attended. Of these, a significant percentage corresponded to fires and firefighting emergencies, both in rural and urban areas. Despite the high demand, we also responded to medical emergencies and other requests in which our firefighting team has proven to be instrumental in ensuring the safety of the community.
+            </motion.p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <motion.h1
+                className="text-4xl sm:text-5xl font-bold text-center text-white"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
+                2023
+            </motion.h1>
             <div className="mt-12 text-center">
                 <motion.h2
                     className="text-4xl font-semibold text-white"
@@ -239,36 +290,8 @@ export const Estadisticas = () => {
                 >
                     In 2023, our team attended a total of 1,710 emergencies. Most of these services were related to grass fires, rescues and other firefighting emergencies that put our operational capacity to the test. However, we also attended medical situations and other incidents where our intervention was essential for the safety of the community.
                 </motion.p>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <motion.h1
-                    className="text-4xl sm:text-5xl font-bold text-center text-white"
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    2024
-                </motion.h1>
-                <motion.h2
-                    className="text-4xl font-semibold text-white mt-12"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    2,554 Services Provided
-                </motion.h2>
-                <motion.p
-                    className="text-lg text-gray-300 leading-relaxed mt-4 max-w-3xl mx-auto"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                >
-                    In 2024 we exceeded expectations, reaching a total of 2,554 services attended. Of these, a significant percentage corresponded to fires and firefighting emergencies, both in rural and urban areas. Despite the high demand, we also responded to medical emergencies and other requests in which our firefighting team has proven to be instrumental in ensuring the safety of the community.
-                </motion.p>
             </div>
+
             <br />
             <br />
             <br />
