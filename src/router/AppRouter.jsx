@@ -6,6 +6,9 @@ import { Nosotros } from "../pages/Nosotros"
 import { Pauto } from "../pages/Pauto"
 import { Servicios } from "../pages/Servicios"
 import { Colaboradores } from "../pages/Colaboradores"
+import { Estadisticas } from "../pages/Estadisticas"
+import { Dragones } from "../pages/Dragones"
+import { Transparencia } from "../pages/Transparencia"
 
 export const AppRouter = () => {
   return(
@@ -18,6 +21,9 @@ export const AppRouter = () => {
           <Route path="/Pauto" element={<Pauto />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/colaboradores" element={<Colaboradores />} />
+          <Route path="/estadisticas" element={<Estadisticas />} />
+          <Route path="/dragones" element={<Dragones />} />
+          <Route path="/transparencia" element={<Transparencia />} />
         </Routes>
     </>
   )

@@ -5,9 +5,14 @@ import LogoSF from "../assets/images/LogoSF.png"; // Asegúrate de tener la ruta
 
 export function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [aboutOpen, setAboutOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const toggleAbout = () => {
+        setAboutOpen(!aboutOpen);
     };
 
     return (
@@ -18,7 +23,6 @@ export function Navbar() {
             transition={{ duration: 0.8 }}
         >
             <div className="navbar-container">
-                {/* Logo en el Navbar */}
                 <div className="navbar-logo-container">
                     <img src={LogoSF} alt="LogoSF" className="navbar-logo" />
                 </div>
@@ -28,14 +32,30 @@ export function Navbar() {
                         <a href="/">HOME</a>
                         <a href="/contacto">Contact</a>
                         <a href="/donaciones">Donations</a>
-                        <a href="/nosotros">ABOUT US</a>
+                        <div className="navbar-dropdown" onClick={toggleAbout}>
+                            <a href="#">ABOUT US ▾</a>
+                            {aboutOpen && (
+                                <motion.div 
+                                    className="dropdown-menu" 
+                                    initial={{ opacity: 0, y: -10 }} 
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <a href="/nosotros">Who Are We?</a>
+                                    <br/>
+                                    <a href="/dragones">Dragones Club</a>
+                                    <br/>
+                                    <a href="/estadisticas">STATISTICS</a>
+                                    <br/>
+                                    <a href="/transparencia">Transparency</a>
+                                </motion.div>
+                            )}
+                        </div>
                         <a href="/servicios">Services</a>
                         <a href="/colaboradores">Collaborators</a>
                     </div>
 
-                    <div className="hamburger" onClick={toggleMenu}>
-                        ☰
-                    </div>
+                    <div className="hamburger" onClick={toggleMenu}>☰</div>
                 </div>
             </div>
         </motion.nav>
