@@ -48,8 +48,7 @@ export const Estadisticas = () => {
         datasets: [{
             label: 'Fires in January 2025 / Incendios en Enero 2025',
             data: [16, 6, 244, 4, 1],
-            backgroundColor: '#D90429',
-            borderColor: '#9B0000',
+            backgroundColor: ['#6A1B9A', '#FFC107', '#D90429', '#1976D2', '#ADFF2F', '' ],
             borderWidth: 2,
         }],
     };
@@ -60,8 +59,7 @@ export const Estadisticas = () => {
         datasets: [{
             label: 'Services in January 2025 / Servicios en Enero 2025',
             data: [5, 25, 31, 11, 29, 2],
-            backgroundColor: '#D90429',
-            borderColor: '#9B0000',
+            backgroundColor: ['#6A1B9A', '#FFC107', '#FF6F00', '#1976D2', '#212121', '#D90429' ],
             borderWidth: 2,
         }],
     };
@@ -83,8 +81,7 @@ export const Estadisticas = () => {
         datasets: [{
             label: 'Unit Outputs / Salidas de Unidades',
             data: [2, 163, 28, 13, 212],
-            backgroundColor: '#00BFFF',
-            borderColor: '#1E90FF',
+            backgroundColor: ['#1E90FF', '#FF8C00', '#FFD700', '#6A1B9A', '#C62828'],
             borderWidth: 2,
         }],
     };
@@ -134,7 +131,7 @@ export const Estadisticas = () => {
 
                 {/* Gráfico de Incendios */}
                 <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
-                    <Bar data={dataIncendios} options={chartOptions} />
+                    <Pie data={dataIncendios} options={chartOptions} />
                 </div>
                 <br />
                 <br />
@@ -155,7 +152,7 @@ export const Estadisticas = () => {
 
                 {/* Gráfico de Otros Servicios */}
                 <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
-                    <Bar data={dataOtrosServicios} options={chartOptions} />
+                    <Pie data={dataOtrosServicios} options={chartOptions} />
                 </div>
 
                 <br />
@@ -199,7 +196,7 @@ export const Estadisticas = () => {
 
                 {/* Gráfico de Salidas de Unidades */}
                 <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
-                    <Bar data={dataSalidas} options={chartOptions} />
+                    <Pie data={dataSalidas} options={chartOptions} />
                 </div>
             </div>
 
