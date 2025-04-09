@@ -6,6 +6,7 @@ import LogoSF from "../assets/images/LogoSF.png"; // Asegúrate de tener la ruta
 export function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [aboutOpen, setAboutOpen] = useState(false);
+    const [servicesOpen, setServicesOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -13,6 +14,12 @@ export function Navbar() {
 
     const toggleAbout = () => {
         setAboutOpen(!aboutOpen);
+        setServicesOpen(false);
+    };
+
+    const toggleServices = () => {
+        setServicesOpen(!servicesOpen);
+        setAboutOpen(false); // Cierra el otro si está abierto
     };
 
     return (
@@ -45,13 +52,25 @@ export function Navbar() {
                                     <br/>
                                     <a href="/dragones">Dragones Club</a>
                                     <br/>
-                                    <a href="/estadisticas">STATISTICS</a>
-                                    <br/>
                                     <a href="/transparencia">Transparency</a>
                                 </motion.div>
                             )}
                         </div>
-                        <a href="/servicios">Services</a>
+                        <div className="navbar-dropdown" onClick={toggleServices}>
+                            <a href="#">Services ▾</a>
+                            {servicesOpen && (
+                                <motion.div 
+                                    className="dropdown-menu" 
+                                    initial={{ opacity: 0, y: -10 }} 
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <a href="/servicios">Our Services</a>
+                                    <br/>
+                                    <a href="/estadisticas">STATISTICS</a>
+                                </motion.div>
+                            )}
+                        </div>
                         <a href="/colaboradores">Collaborators</a>
                     </div>
 

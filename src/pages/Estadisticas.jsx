@@ -224,7 +224,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    758 Services attended from January to March 2025
+                    1043 Services attended from January to March 2025
                 </motion.h2>
             </div>
 
