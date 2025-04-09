@@ -46,23 +46,25 @@ export const Estadisticas = () => {
     const dataIncendios = {
         labels: ['House Room', 'Vehicle', 'Pasture', 'Garbage', 'Tree'],
         datasets: [{
-            label: 'Fires in January 2025 / Incendios en Enero 2025',
-            data: [16, 6, 244, 4, 1],
-            backgroundColor: ['#6A1B9A', '#FFC107', '#D90429', '#1976D2', '#ADFF2F', '' ],
+            label: 'Fires in March 2025 / Incendios en Marzo 2025',
+            data: [16, 6, 216, 4, 1],
+            backgroundColor: ['#6A1B9A', '#FFC107', '#D90429', '#1976D2', '#ADFF2F'],
             borderWidth: 2,
         }],
     };
+    
 
     // Datos de otros servicios
     const dataOtrosServicios = {
         labels: ['Prehospital Services', 'Hazardous Materials', 'Traffic Events', 'Urban Rescue', 'Special Services', 'Support to “Cruz Roja”'],
         datasets: [{
-            label: 'Services in January 2025 / Servicios en Enero 2025',
-            data: [5, 25, 31, 11, 29, 2],
-            backgroundColor: ['#6A1B9A', '#FFC107', '#FF6F00', '#1976D2', '#212121', '#D90429' ],
+            label: 'Services in March 2025 / Servicios en Marzo 2025',
+            data: [1, 26, 39, 6, 37, 0],
+            backgroundColor: ['#6A1B9A', '#FFC107', '#FF6F00', '#1976D2', '#212121', '#D90429'],
             borderWidth: 2,
         }],
     };
+    
 
     // Datos de llamadas
     const dataLlamadas = {
@@ -113,7 +115,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Statistics JANUARY 2025
+                    Statistics March 2025
                 </motion.h1>
 
                 <br />
@@ -126,7 +128,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Fires in January 2025
+                    Fires in March 2025
                 </motion.h3>
 
                 {/* Gráfico de Incendios */}
@@ -146,7 +148,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Services in January 2025
+                    Services in March 2025
                 </motion.h3>
 
 
@@ -164,19 +166,19 @@ export const Estadisticas = () => {
                 <br />
                 <br />
 
-                <motion.h3
+                {/* <motion.h3
                     className="text-4xl sm:text-5xl font-bold text-center text-white"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
                     Emergency Calls
-                </motion.h3>
+                </motion.h3> */}
 
                 {/* Gráfico de Llamadas */}
-                <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
+                {/* <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
                     <Pie data={dataLlamadas} options={chartOptions} />
-                </div>
+                </div> */}
 
                 <br />
                 <br />
@@ -185,19 +187,19 @@ export const Estadisticas = () => {
                 <br />
                 <br />
 
-                <motion.h3
+                {/* <motion.h3
                     className="text-4xl sm:text-5xl font-bold text-center text-white"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
                     Emergency unit exits
-                </motion.h3>
+                </motion.h3> */}
 
                 {/* Gráfico de Salidas de Unidades */}
-                <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
+                {/* <div className="mt-12 w-full max-w-4xl bg-gray-800 p-8 rounded-lg shadow-lg text-white">
                     <Pie data={dataSalidas} options={chartOptions} />
-                </div>
+                </div> */}
             </div>
 
             <br />
@@ -222,7 +224,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    392 Services attended January 2025
+                    758 Services attended from January to March 2025
                 </motion.h2>
             </div>
 
