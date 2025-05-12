@@ -44,11 +44,11 @@ export const Estadisticas = () => {
 
     // Datos de incendios
     const dataIncendios = {
-        labels: ['House Room', 'Vehicle', 'Pasture', 'Garbage', 'Tree'],
+        labels: ['House Room', 'Vehicle', 'Pasture', 'Garbage', 'Tree', 'Other Fires' ],
         datasets: [{
             label: 'Fires in March 2025 / Incendios en Marzo 2025',
-            data: [16, 6, 216, 4, 1],
-            backgroundColor: ['#6A1B9A', '#FFC107', '#D90429', '#1976D2', '#ADFF2F'],
+            data: [15, 3, 208, 7, 2, 9],
+            backgroundColor: ['#6A1B9A', '#FFC107', '#D90429', '#1976D2', '#ADFF2F', '#ff2fdc'],
             borderWidth: 2,
         }],
     };
@@ -59,7 +59,7 @@ export const Estadisticas = () => {
         labels: ['Prehospital Services', 'Hazardous Materials', 'Traffic Events', 'Urban Rescue', 'Special Services', 'Support to “Cruz Roja”'],
         datasets: [{
             label: 'Services in March 2025 / Servicios en Marzo 2025',
-            data: [1, 26, 39, 6, 37, 0],
+            data: [2, 22, 37, 10, 29, 0],
             backgroundColor: ['#6A1B9A', '#FFC107', '#FF6F00', '#1976D2', '#212121', '#D90429'],
             borderWidth: 2,
         }],
@@ -115,7 +115,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Statistics March 2025
+                    Statistics April 2025
                 </motion.h1>
 
                 <br />
@@ -148,7 +148,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Services in March 2025
+                    Services in April 2025
                 </motion.h3>
 
 
@@ -224,7 +224,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    1043 Services attended from January to March 2025
+                    1387 Services attended from January to April 2025
                 </motion.h2>
             </div>
 
@@ -285,7 +285,7 @@ export const Estadisticas = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    1,710 Services Provided
+                    1,710 - Services Provided
                 </motion.h2>
                 <motion.p
                     className="text-lg text-gray-300 leading-relaxed mt-4 max-w-3xl mx-auto"
