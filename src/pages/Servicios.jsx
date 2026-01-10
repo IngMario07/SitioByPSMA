@@ -6,114 +6,164 @@ import { loadFirePreset } from "tsparticles-preset-fire";
 import { useCallback } from "react";
 
 export const Servicios = () => {
-    const particlesInit = useCallback((motor) => {
-        loadFirePreset(motor);
-    }, []);
+  const particlesInit = useCallback((engine) => {
+    loadFirePreset(engine);
+  }, []);
 
-    return (
-        <>
-            <Navbar />
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                options={{
-                    preset: "fire",
-                    background: { color: "#1a202c" },
-                    fullScreen: { enable: true, zIndex: -1 },
-                }}
-            />
-            <div className="bg-gray-900 text-white">
-                <div className="relative w-full min-h-screen flex flex-col justify-center items-center px-6 py-16 space-y-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black">
-                    <motion.h1
-                        className="text-4xl sm:text-5xl font-bold text-center text-white"
-                        initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
-                    >
-                        Our Services
-                    </motion.h1>
-                    <motion.p
-                        className="text-lg sm:text-xl text-gray-300 leading-relaxed text-center max-w-3xl"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.5 }}
-                    >
-                        At Bomberos y Paramédicos SMA we offer essential services for the safety and well-being of our community. We specialize in fire and emergency response, in addition to providing training in first aid and life support. Our team is committed to provide fast and effective care in critical situations, safeguarding the life and health of people. In addition, we attend events of various kinds, providing support and security for attendees.
-                    </motion.p>
-                </div>
+  return (
+    <>
+      <Navbar />
 
-                <div className="bg-white py-16 px-6">
-                    <div className="max-w-4xl mx-auto">
-                        <motion.h2
-                            className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1 }}
-                        >
-                            Fire Service
-                        </motion.h2>
-                        <motion.p
-                            className="text-lg sm:text-xl text-gray-700 leading-relaxed text-center"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                        >
-                            We attend emergencies related to fires, rescues and risk situations. Our team is highly trained and equipped with advanced technology to provide an efficient and safe response. We ensure that we act quickly to protect people's lives, prevent property damage and minimize the impact of fires on our community. In addition, we are available to attend events, offering security and support for any eventuality.
-                        </motion.p>
-                    </div>
-                </div>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          preset: "fire",
+          background: { color: "#1a202c" },
+          fullScreen: { enable: true, zIndex: -1 },
+        }}
+      />
 
-                <div className="bg-gray-100 py-16 px-6">
-                    <div className="max-w-4xl mx-auto">
-                        <motion.h2
-                            className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1 }}
-                        >
-                            Medical Emergencies
-                        </motion.h2>
-                        <motion.p
-                            className="text-lg sm:text-xl text-gray-700 leading-relaxed text-center"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                        >
-                            Although we do not have our own ambulance, we provide primary care as first responders while the unit arrives to continue the care. We have Automated External Defibrillators (AEDs) and advanced equipment to assist in critical situations. Our priority is to stabilize patients and ensure their well-being. We are also present at events, guaranteeing immediate attention to any medical emergency.
-                        </motion.p>
-                    </div>
-                </div>
+      <main className="relative text-white pt-32 space-y-32">
 
-                <div className="bg-white py-16 px-6">
-                    <div className="max-w-4xl mx-auto">
-                        <motion.h2
-                            className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1 }}
-                        >
-                            Emergency Training
-                        </motion.h2>
-                        <motion.p
-                            className="text-lg sm:text-xl text-gray-700 leading-relaxed text-center"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                        >
-                            We offer training in first aid, use and handling of fire extinguishers, CPR, Stop The Bleed and for companies, schools and society in general. Our mission is to empower people with the necessary knowledge to act in emergency situations. These courses are designed to be practical and accessible, allowing participants to effectively prepare themselves to respond to incidents in their homes, workplaces and on public roads. We can also provide training in the context of events, helping organizers to ensure the safety of attendees.
-                        </motion.p>
-                    </div>
-                </div>
-            </div>
+        {/* HERO */}
+        <section className="px-6 max-w-4xl mx-auto">
+          <motion.div
+            className="
+              bg-black/30 backdrop-blur-md
+              border border-white/10
+              rounded-3xl p-10
+              text-center space-y-8
+              shadow-2xl
+            "
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <h1 className="text-4xl sm:text-5xl font-extrabold">
+              Our Services
+            </h1>
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+              At Firefighters and Paramedics SMA we offer essential services for
+              the safety and well-being of our community. We respond to
+              emergencies, provide training and support events with a highly
+              committed team.
+            </p>
+          </motion.div>
+        </section>
 
-            <Footer />
-        </>
-    );
+        {/* SERVICES */}
+        <section className="px-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            {/* FIRE SERVICE */}
+            <motion.div
+              className="
+                bg-white/10 backdrop-blur-md
+                border border-white/10
+                rounded-3xl p-8
+                text-center space-y-6
+                shadow-xl
+                hover:scale-[1.03] transition
+              "
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <h2 className="text-2xl font-bold">
+                Fire Service
+              </h2>
+
+              <p className="text-gray-300 leading-relaxed">
+                We respond to fires, rescues and high-risk situations with
+                trained personnel and specialized equipment, prioritizing the
+                protection of life and property.
+              </p>
+            </motion.div>
+
+            {/* MEDICAL EMERGENCIES */}
+            <motion.div
+              className="
+                bg-white/10 backdrop-blur-md
+                border border-white/10
+                rounded-3xl p-8
+                text-center space-y-6
+                shadow-xl
+                hover:scale-[1.03] transition
+              "
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <h2 className="text-2xl font-bold">
+                Medical Emergencies
+              </h2>
+
+              <p className="text-gray-300 leading-relaxed">
+                As first responders, we provide immediate medical care,
+                stabilization and AED assistance while ambulance units arrive
+                to continue advanced treatment.
+              </p>
+            </motion.div>
+
+            {/* TRAINING */}
+            <motion.div
+              className="
+                bg-white/10 backdrop-blur-md
+                border border-white/10
+                rounded-3xl p-8
+                text-center space-y-6
+                shadow-xl
+                hover:scale-[1.03] transition
+              "
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+            >
+              <h2 className="text-2xl font-bold">
+                Emergency Training
+              </h2>
+
+              <p className="text-gray-300 leading-relaxed">
+                We offer first aid, CPR, fire extinguisher use and emergency
+                response training for schools, companies and the community.
+              </p>
+            </motion.div>
+
+          </div>
+        </section>
+
+        {/* EVENTS */}
+        <section className="px-6 max-w-4xl mx-auto">
+          <motion.div
+            className="
+              bg-black/30 backdrop-blur-md
+              border border-white/10
+              rounded-3xl p-10
+              text-center space-y-6
+              shadow-xl
+            "
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <h2 className="text-3xl font-bold">
+              Event Coverage
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed text-lg">
+              We provide safety coverage for public and private events,
+              ensuring rapid response to any emergency and peace of mind for
+              organizers and attendees.
+            </p>
+          </motion.div>
+        </section>
+
+      </main>
+
+      <br/>
+      <br/>
+
+
+      <Footer />
+    </>
+  );
 };

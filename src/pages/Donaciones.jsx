@@ -1,188 +1,183 @@
-import { motion } from "framer-motion";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { FaHandHoldingUsd, FaWarehouse, FaWhatsapp, FaUniversity } from "react-icons/fa"; // Agregando nuevo ícono
+import { motion } from "framer-motion";
 import Particles from "react-tsparticles";
 import { loadFirePreset } from "tsparticles-preset-fire";
 import { useCallback } from "react";
 
+import {
+  FaHandHoldingUsd,
+  FaWarehouse,
+  FaWhatsapp,
+  FaUniversity,
+} from "react-icons/fa";
+
 export const Donaciones = () => {
-    const particlesInit = useCallback((engine) => {
-        loadFirePreset(engine);
-    }, []);
+  const particlesInit = useCallback(async (engine) => {
+    await loadFirePreset(engine);
+  }, []);
 
-    return (
-        <>
-            <Navbar />
+  return (
+    <>
+      <Navbar />
 
-            {/* Fondo animado de partículas */}
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                options={{
-                    preset: "fire",
-                    background: {
-                        color: "#1a202c", // Fondo oscuro
-                    },
-                    fullScreen: {
-                        enable: true,
-                        zIndex: -1,
-                    },
-                }}
-            />
+      {/* 🔥 FONDO DE PARTÍCULAS */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          preset: "fire",
+          background: {
+            color: "#ffffff", // 🔑 FONDO OSCURO REAL
+          },
+          fullScreen: {
+            enable: true,
+            zIndex: -1,
+          },
+        }}
+      />
 
-            <div className="bg-gray-900 text-white min-h-screen">
-                {/* Sección principal */}
-                <div className="relative w-full flex flex-col justify-center items-center px-6 py-16 space-y-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-center">
-                    <motion.h1
-                        className="text-4xl sm:text-5xl font-bold text-white"
-                        initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
-                    >
-                        Support SMA Firefighters and Paramedics!
-                    </motion.h1>
-                    <motion.p
-                        className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.5 }}
-                    >
-                        Your help is vital for us to continue providing emergency services with adequate equipment and resources. Here's how you can help.
-                    </motion.p>
-                </div>
+      {/* CONTENIDO */}
+      <main className="relative z-10 min-h-screen text-white bg-gradient-to-b from-black/40 via-black/70 to-black">
 
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+        {/* HERO */}
+        <section className="min-h-[70vh] flex flex-col justify-center items-center text-center px-6">
+          <motion.h1
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Support Our Firefighters <br />
+            & Paramedics
+          </motion.h1>
 
-                {/* Contenedor principal de opciones */}
-                <div className="bg-gray-100 py-16 px-6">
-                    <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+          <motion.p
+            className="max-w-3xl text-lg sm:text-xl text-gray-300"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+          >
+            Your donation directly strengthens emergency response, saves lives
+            and ensures our teams have the equipment and training they need.
+          </motion.p>
+        </section>
 
-                        {/* Opción de donación monetaria internacional */}
-                        <motion.div
-                            className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg text-center"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1 }}
-                        >
+        {/* OPCIONES */}
+        <section className="py-15 px-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
-                            <FaUniversity className="text-5xl text-indigo-500 mb-4" />
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                            Donations by Bank Transfer in Mexican territory
-                            </h2>
-                            <br />
-                            <br />
-                            <p className="text-lg text-gray-700 mb-4">
-                            Do not forget to put in the reference:{" "}
-                                <span className="font-bold">APORTACIÓN</span>.
-                            </p>
-                            <div className="bg-gray-200 p-4 rounded-lg text-gray-800 w-full max-w-md">
-                                <p className="font-semibold">Name Bank: <span className="font-normal">BBVA</span></p>
-                                <p className="font-semibold">Account: <span className="font-normal">011 862 7339</span></p>
-                                <p className="font-semibold">CLABE: <span className="font-normal">012 240 00118627339 1</span></p>
-                                <p className="font-semibold">Holder's name: <span className="font-normal">Bomberos y Paramédicos SMA AC </span></p>
-                            </div>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <FaHandHoldingUsd className="text-5xl text-green-500 mb-4" />
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                            International Monetary Contribution 
-                            </h2>
-                            <br />
-                            <br />
-                            <motion.div
-                                className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg text-center"
-                                initial={{ opacity: 0, y: -50 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 1 }}
-                            >
-                            </motion.div>
-                            <p className="text-lg text-gray-700 mb-4">
-                            If you wish to donate from another country, you can do so through our partner organization,{" "}
-                                <span className="font-semibold">San Miguel Community Foundation</span>.
-                            </p>
-                            <a
-                                href="https://sanmiguelcommunityfoundation.org/english/bomberos-y-paramedicos-sma-ac/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-lg transition"
-                            >
-                                Make your donation here
-                            </a>
-                        </motion.div>
-                        <br />
-                        <br />
+            {/* DONACIÓN BANCARIA */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 rounded-3xl p-10 border border-white/10 shadow-[0_0_50px_rgba(255,80,0,0.35)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaUniversity className="text-5xl text-indigo-400 mb-6" />
+              <h2 className="text-2xl font-bold mb-4">
+                Bank Transfer (Mexico)
+              </h2>
 
-                       
-                        <br />
-                        <br />
+              <p className="text-gray-300 mb-6">
+                Use reference:
+                <span className="font-bold text-white"> APORTACIÓN</span>
+              </p>
 
-                        {/* Opción de donación de materiales */}
-                        <motion.div
-                            className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg text-center"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                        >
-                            <FaWarehouse className="text-5xl text-blue-500 mb-4" />
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                            Material Donations
-                            </h2>
-                            <p className="text-lg text-gray-700 mb-4">
-                            If you wish to support us with equipment or supplies, you can bring them directly to our facilities.
-                            </p>
-                            <p className="text-lg text-gray-700 mb-4">
-                            Your donation will make a difference!
-                            </p>
-                        </motion.div>
+              <div className="bg-black/80 rounded-xl p-6 text-sm space-y-2">
+                <p><span className="font-semibold">Bank:</span> BBVA</p>
+                <p><span className="font-semibold">Account:</span> 011 862 7339</p>
+                <p><span className="font-semibold">CLABE:</span> 012 240 00118627339 1</p>
+                <p><span className="font-semibold">Account Holder:</span> Bomberos y Paramédicos SMA AC</p>
+              </div>
+            </motion.div>
 
-                        <br />
-                        <br />
-                        
-                        <br />
-                        <br />
+            {/* DONACIÓN INTERNACIONAL */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 rounded-3xl p-10 border border-white/10 shadow-[0_0_50px_rgba(0,255,120,0.35)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaHandHoldingUsd className="text-5xl text-green-400 mb-6" />
+              <h2 className="text-2xl font-bold mb-4">
+                International Donations
+              </h2>
 
+              <p className="text-gray-300 mb-6">
+                Donations outside Mexico are processed through
+                <span className="font-semibold text-white">
+                  {" "}San Miguel Community Foundation
+                </span>
+              </p>
 
-                        {/* Opción de contacto por WhatsApp */}
-                        <motion.div
-                            className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg text-center"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 1.5 }}
-                        >
-                            <FaWhatsapp className="text-5xl text-green-500 mb-4" />
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                            More Information
-                            </h2>
-                            <p className="text-lg text-gray-700 mb-4">
-                            Contact us by WhatsApp for any questions about donations.
-                            </p>
-                            <a href="https://wa.me/+524151807211" target="_blank" rel="noopener noreferrer">
-                                <FaWhatsapp className="text-8xl text-[#25D366]" />
-                            </a>
-                            <p className="text-lg font-semibold text-gray-700 mt-4">
-                                📲 415 180 7211
-                            </p>
-                            <p className="text-lg text-gray-700">
-                            Office hours: 8:00 AM - 4:00 PM ( Monday to Friday ) Central Time Mexico
-                            </p>
-                        </motion.div>
+              <a
+                href="https://sanmiguelcommunityfoundation.org/english/bomberos-y-paramedicos-sma-ac/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-green-600 hover:bg-green-700 transition px-8 py-3 rounded-xl font-semibold"
+              >
+                Donate Now
+              </a>
+            </motion.div>
 
-                    </div>
-                </div>
-            </div>
+            {/* DONACIÓN DE MATERIALES */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 rounded-3xl p-10 border border-white/10 shadow-[0_0_50px_rgba(0,140,255,0.35)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaWarehouse className="text-5xl text-blue-400 mb-6" />
+              <h2 className="text-2xl font-bold mb-4">
+                Material Donations
+              </h2>
 
-            <br />
-                        <br />
+              <p className="text-gray-300">
+                Donate equipment, tools or supplies directly at our facilities.
+              </p>
+            </motion.div>
 
-            <Footer />
-        </>
-    );
+            {/* WHATSAPP */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 rounded-3xl p-10 border border-white/10 shadow-[0_0_50px_rgba(37,211,102,0.4)] text-center"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaWhatsapp className="text-5xl text-green-500 mb-6 mx-auto" />
+              <h2 className="text-2xl font-bold mb-4">
+                More Information
+              </h2>
+
+              <p className="text-gray-300 mb-6">
+                Contact us directly via WhatsApp.
+              </p>
+
+              <a
+                href="https://wa.me/524151807211"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#25D366] text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition"
+              >
+                <FaWhatsapp />
+                415 180 7211
+              </a>
+
+              <p className="text-sm text-gray-400 mt-4">
+                Office hours: Mon–Fri · 8:00 AM – 4:00 PM
+              </p>
+            </motion.div>
+
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
 };

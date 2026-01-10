@@ -3,143 +3,154 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadFirePreset } from "tsparticles-preset-fire"; // Asegúrate de importar esto
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa"; // Importa FaWhatsapp
+import { loadFirePreset } from "tsparticles-preset-fire";
+
+import {
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export const Contacto = () => {
-    const particlesInit = useCallback((engine) => {
-        loadFirePreset(engine); // Carga el preset de fuego
-    }, []);
+  const particlesInit = useCallback(async (engine) => {
+    await loadFirePreset(engine);
+  }, []);
 
-    return (
-        <>
-            <Navbar />
+  return (
+    <>
+      <Navbar />
 
-            {/* Fondo animado de partículas con llamas */}
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                options={{
-                    preset: "fire", // Establece el preset de llamas
-                    background: {
-                        color: "#1a202c", // Fondo oscuro para contrastar
-                    },
-                    fullScreen: {
-                        enable: true,
-                        zIndex: -1, // Asegúrate de que las partículas estén detrás del contenido
-                    },
-                }}
+      {/* 🔥 PARTÍCULAS DE FONDO */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          preset: "fire",
+          background: {
+            color: "#0b0f1a",
+          },
+          fullScreen: {
+            enable: true,
+            zIndex: -1,
+          },
+        }}
+      />
+
+      {/* CONTENIDO */}
+      <main className="relative z-10 min-h-screen text-white bg-gradient-to-b from-black/40 via-black/70 to-black">
+
+        {/* HERO */}
+        <section className="min-h-[60vh] flex flex-col justify-center items-center text-center px-6">
+          <motion.h1
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6"
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Contact Us
+          </motion.h1>
+
+          <motion.p
+            className="max-w-2xl text-lg sm:text-xl text-gray-300"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            We are here to help you. Don&apos;t hesitate to contact us.
+          </motion.p>
+        </section>
+
+        {/* MAPA */}
+        <section className="px-6 mb-24">
+          <motion.div
+            className="max-w-xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(255,80,0,0.25)]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.3927500000003!2d-100.7197406888008!3d20.896492640210056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b518a0f9c433b%3A0x24922b0c5bc207ff!2sBomberos%20y%20Param%C3%A9dicos%20SMA!5e0!3m2!1ses-419!2smx!4v1738099497092!5m2!1ses-419!2smx"
+              className="w-full h-[300px]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
+          </motion.div>
+        </section>
 
-            <br/>
+        {/* TARJETAS DE CONTACTO */}
+        <section className="pb-32 px-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-            {/* Contenedor principal con el mapa al inicio */}
-            <div className="relative w-full min-h-screen flex flex-col justify-center items-center px-6 space-y-6">
-                {/* Mapa de Google centrado y más pequeño */}
-                <div className="w-full max-w-sm mb-8">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.96207800607385!2d-100.7197406888008!3d20.896492640210056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b518a0f9c433b%3A0x24922b0c5bc207ff!2sBomberos%20y%20Param%C3%A9dicos%20SMA!5e0!3m2!1ses-419!2smx!4v1738099497092!5m2!1ses-419!2smx"
-                        width="100%" 
-                        height="250" 
-                        style={{ border: 0, borderRadius: '10px' }} 
-                        allowFullScreen="" 
-                        loading="lazy" 
-                        referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
-                
+            {/* TELÉFONO */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center shadow-[0_0_40px_rgba(0,140,255,0.3)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaPhoneAlt className="text-4xl text-blue-400 mb-4 mx-auto" />
+              <h3 className="text-xl font-bold mb-2">Phone</h3>
+              <p className="text-gray-300">+52 (415) 688 1615</p>
+            </motion.div>
 
-                <motion.h1
-                    className="text-4xl sm:text-5xl font-bold text-white"
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    CONTACT US
-                </motion.h1>
-                
-                <div className="mt-8 text-white text-center">
-                    <motion.p
-                        className="text-lg sm:text-xl"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.5 }}
-                    >
-                        
-We are here to help you. Don't hesitate to contact us.
-                    </motion.p>
-                </div>
+            {/* DIRECCIÓN */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center shadow-[0_0_40px_rgba(255,140,0,0.3)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaMapMarkerAlt className="text-4xl text-orange-400 mb-4 mx-auto" />
+              <h3 className="text-xl font-bold mb-2">Address</h3>
+              <p className="text-gray-300 text-sm">
+                Fray Bernardo Cossin 133-Int. 1<br />
+                San Miguel de Allende, Gto.
+              </p>
+            </motion.div>
 
-                <br/>
+            {/* EMAIL */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center shadow-[0_0_40px_rgba(0,255,120,0.3)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaEnvelope className="text-4xl text-green-400 mb-4 mx-auto" />
+              <h3 className="text-xl font-bold mb-2">Email</h3>
+              <p className="text-gray-300 text-sm break-all">
+                bomberosyparamedicossma@gmail.com
+              </p>
+            </motion.div>
 
-                <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 md:px-16">
-                    <motion.div
-                        className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center text-white"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
-                    >
-                        <FaPhoneAlt className="text-4xl mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">Call us on our landline</h3>
-                        <p className="text-lg">+52 (415) 688 1615</p>
-                    </motion.div>
+            {/* WHATSAPP */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center shadow-[0_0_50px_rgba(37,211,102,0.4)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaWhatsapp className="text-5xl text-[#25D366] mb-4 mx-auto" />
+              <h3 className="text-xl font-bold mb-4">WhatsApp</h3>
+              <a
+                href="https://wa.me/524151807211"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#25D366] text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition"
+              >
+                415 180 7211
+              </a>
+            </motion.div>
 
-                    {/* Línea divisoria entre contactos */}
-                <div className="my-8">
-                    <hr className="border-t-2 border-white w-32 mx-10px" />
-                </div>
+          </div>
+        </section>
+      </main>
 
-                    <motion.div
-                        className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center text-white"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
-                    >
-                        <FaMapMarkerAlt className="text-4xl mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">Address</h3>
-                        <p className="text-lg">Fray Bernardo Cossin 133-Int. 1, Insurgentes, 37745 San Miguel de Allende, Gto.</p>
-                    </motion.div>
-
-                    {/* Línea divisoria entre contactos */}
-                <div className="my-8">
-                    <hr className="border-t-2 border-white w-32 mx-10px" />
-                </div>
-
-                    <motion.div
-                        className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center text-white"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
-                    >
-                        <FaEnvelope className="text-4xl mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">Email</h3>
-                        <p className="text-lg">bomberosyparamedicossma@gmail.com</p>
-                    </motion.div>
-
-                    {/* Línea divisoria entre contactos */}
-                <div className="my-8">
-                    <hr className="border-t-2 border-white w-32 mx-10px" />
-                </div>
-
-                    {/* Nuevo ícono de WhatsApp */}
-                    <motion.div
-                        className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center text-white"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
-                    >
-                        <h3 className="text-2xl font-bold mb-2">Contact us by WhatsApp</h3>
-                        <a href="https://wa.me/+524151807211" target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp className="text-8xl mb-4 text-[#25D366]" /> {/* Tamaño más grande y color verde */}
-                        </a>
-                    </motion.div>
-                </div>
-            </div>
-
-            <br/>
-            <br/>
-
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 };
