@@ -58,7 +58,7 @@ export const Donaciones = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Your donation directly strengthens emergency response, saves lives
+            Your contribution directly strengthens emergency response, saves lives
             and ensures our teams have the equipment and training they need.
           </motion.p>
         </section>
@@ -114,7 +114,7 @@ export const Donaciones = () => {
               </p>
 
               <a
-                href="https://sanmiguelcommunityfoundation.org/english/bomberos-y-paramedicos-sma-ac/"
+                href="https://www.smcf.mx/donate/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 hover:bg-green-700 transition px-8 py-3 rounded-xl font-semibold"
@@ -133,11 +133,11 @@ export const Donaciones = () => {
             >
               <FaWarehouse className="text-5xl text-blue-400 mb-6" />
               <h2 className="text-2xl font-bold mb-4">
-                Material Donations
+                Material Contributions
               </h2>
 
               <p className="text-gray-300">
-                Donate equipment, tools or supplies directly at our facilities.
+                Provides equipment, tools or supplies directly at our facilities.
               </p>
             </motion.div>
 

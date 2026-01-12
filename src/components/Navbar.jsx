@@ -13,7 +13,7 @@ export const Navbar = () => {
     { ruta: "/", titulo: "Home" },
 
     {
-      titulo: "About Us",
+      titulo: "ABOUT US",
       submenu: [
         { ruta: "/nosotros", titulo: "Who Are We?" },
         { ruta: "/dragones", titulo: "Dragones Club" },
@@ -29,7 +29,7 @@ export const Navbar = () => {
       ],
     },
 
-    { ruta: "/donaciones", titulo: "Donations" },
+    { ruta: "/donaciones", titulo: "Contributions" },
     { ruta: "/colaboradores", titulo: "Collaborators" },
     { ruta: "/contacto", titulo: "Contact" },
   ];
