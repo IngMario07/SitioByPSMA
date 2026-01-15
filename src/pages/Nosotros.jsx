@@ -165,7 +165,7 @@ export const Nosotros = () => {
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              <strong>Comisario:</strong> Ing. José César Guerrero Zárate
+              <strong>Oversight Body (Comisario):</strong> Ing. José César Guerrero Zárate
             </p>
 
             {/* LEGAL */}
