@@ -6,11 +6,30 @@ import Particles from "react-tsparticles";
 import { loadFirePreset } from "tsparticles-preset-fire";
 import Ultimo from "../assets/images/Ultimo.png";
 import { FaHandsHelping, FaUsers, FaHeartbeat, FaArrowDown } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export const Inicio = () => {
   const particlesInit = useCallback((engine) => {
     loadFirePreset(engine);
   }, []);
+
+  const socialLinks = [
+  {
+    link: "https://www.facebook.com/bomberosyparamedicossma",
+    icon: <FaFacebookF />,
+    label: "Facebook",
+  },
+  {
+    link: "https://www.instagram.com/bomberos_paramedicos_sma/",
+    icon: <FaInstagram />,
+    label: "Instagram",
+  },
+  {
+    link: "https://www.tiktok.com/@bypsma",
+    icon: <FaTiktok />,
+    label: "TikTok",
+  },
+];  
 
   return (
     <>
@@ -68,6 +87,48 @@ export const Inicio = () => {
             Welcome to Firefighters and Paramedics SMA
           </motion.h1>
 
+          {/* REDES SOCIALES */}
+<section className="flex flex-col items-center space-y-6 pt-10">
+  <motion.h3
+    className="text-2xl font-bold text-gray-200"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+  >
+    Follow us on social media
+  </motion.h3>
+
+  <div className="flex gap-6">
+    {socialLinks.map((social, index) => (
+      <motion.a
+        key={index}
+        href={social.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={social.label}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: index * 0.2 }}
+        whileHover={{ scale: 1.15 }}
+        whileTap={{ scale: 0.95 }}
+        className="
+          flex items-center justify-center
+          w-14 h-14 rounded-full
+          bg-gradient-to-br from-red-600 to-orange-500
+          text-white text-2xl
+          shadow-lg shadow-red-500/30
+          hover:shadow-red-500/60
+          transition-all
+        "
+      >
+        {social.icon}
+      </motion.a>
+    ))}
+  </div>
+</section>
+
+<br/>
+
           <motion.p
             className="text-lg sm:text-xl md:text-2xl text-gray-300"
             initial={{ opacity: 0, y: 40 }}
@@ -115,7 +176,12 @@ export const Inicio = () => {
           <p className="text-gray-300 leading-7">We do not only respond to emergencies — we prevent, educate and work alongside our people.</p>
           <p className="font-bold text-gray-200">Always ready. Always by your side.</p>
         </section>
+
+        
       </main>
+      
+      <br/>
+      <br/>
 
       <Footer />
     </>

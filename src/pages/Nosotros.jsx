@@ -94,9 +94,9 @@ export const Nosotros = () => {
             {[
               { year: "2022", img: ByP00, text: "First unit lent by Dr. Alberto Carrera." },
               { year: "2022", img: Unidades1, text: "Two units and a temporary station space provided by local government." },
-              { year: "2023", img: Dragones1, text: "Creation of the Dragons children's emergency education group." },
-              { year: "2023", img: ByP03, text: "Acquisition of ByP03 through donations and events." },
-              { year: "2024", img: ByP04, text: "Donation of ByP04 and SCBA equipment by San Miguel Community Foundation." },
+              { year: "2023", img: Dragones1, text: "Creation of the Dragons Reds children's emergency education group." },
+              { year: "2023", img: ByP03, text: "Acquisition of ByP03 through Contribution and events." },
+              { year: "2024", img: ByP04, text: "Contribution of equipment: Motorized unit (ByP04) and Self-Contained Breathing Apparatus (SCBA) equipment by SAN MIGUEL COMMUNITY FOUNDATION." },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -152,40 +152,56 @@ export const Nosotros = () => {
 
         {/* STRUCTURE */}
         <section className="px-6">
-          <motion.div
-            className="
-              max-w-4xl mx-auto
-              bg-white/10 backdrop-blur-md
-              border border-white/10
-              rounded-3xl p-10
-              text-center space-y-10
-              shadow-xl
-            "
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold">
-              Structure of the Association
-            </h2>
+  <motion.div
+    className="
+      max-w-4xl mx-auto
+      bg-white/10 backdrop-blur-md
+      border border-white/10
+      rounded-3xl p-10
+      text-center space-y-8
+      shadow-xl
+    "
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+  >
+    <h2 className="text-3xl sm:text-4xl font-bold">
+      General Assembly & Board of Directors
+    </h2>
 
-            <p className="text-lg text-gray-300 leading-relaxed">
-              <strong>The Assembly</strong> is the highest authority of the
-              Association, composed of more than 35 active firefighters.
-            </p>
+    <p className="text-lg text-gray-300 leading-relaxed">
+      On <strong>January 13, 2026</strong>, the General Assembly of Bomberos y
+      Paramédicos SMA was held, reaffirming our democratic principles and
+      institutional strength.
+    </p>
 
-            <ul className="text-left list-disc list-inside space-y-2 text-gray-300 max-w-3xl mx-auto">
-              <li>Elect council members</li>
-              <li>Approve budgets</li>
-              <li>Define operational guidelines</li>
-              <li>Review annual reports</li>
-            </ul>
+    <p className="text-lg text-gray-300 leading-relaxed">
+      As a result of this process, a new <strong>Board of Directors for the
+      2026–2028 term</strong> was elected by majority vote, assuming the
+      responsibility of leading the Association’s strategic and operational
+      direction.
+    </p>
 
-            <p className="text-lg text-gray-300 leading-relaxed">
-              <strong>The Council Directors</strong> execute strategies approved
-              by the Assembly and manage daily operations.
-            </p>
-          </motion.div>
-        </section>
+    <ul className="text-left list-disc list-inside space-y-2 text-gray-300 max-w-3xl mx-auto">
+      <li><strong>President:</strong> Lic. Carlos González Sandoval</li>
+      <li><strong>Secretary:</strong> Firefighter Manuel Buenrostro Olvera</li>
+      <li><strong>Treasurer:</strong> LCP Claudia Abigail Torres Téllez</li>
+      <li><strong>Board Member:</strong> Firefighter John Wesley Burke González</li>
+      <li><strong>Board Member:</strong> Dr. Juan Olvera Flores</li>
+    </ul>
+
+    <p className="text-lg text-gray-300 leading-relaxed">
+      The new Board is committed to transparency, operational excellence,
+      continuous training, and strengthening emergency response services for
+      our community.
+    </p>
+
+    <p className="font-semibold text-gray-200">
+      Working together for a Firefighters and Paramedics Association at the
+      level our city deserves.
+    </p>
+  </motion.div>
+</section>
+
 
       </main>
 

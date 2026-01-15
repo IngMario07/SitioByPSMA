@@ -109,7 +109,7 @@ export const Estadisticas = () => {
 />
 
         {/* CONTENIDO */}
-        <main className="relative z-10 min-h-screen text-white px-6 py-32 bg-gradient-to-b from-black/40 via-gray-900/40 to-black/60">
+        <main className="relative z-10 min-h-screen text-white px-6 py-32 bg-gradient-to-b from-black/0 via-gray-900/40 to-black/5">
 
           <motion.h1
             className="text-6xl font-extrabold text-center mb-16"

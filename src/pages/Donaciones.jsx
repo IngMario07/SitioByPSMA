@@ -38,7 +38,7 @@ export const Donaciones = () => {
       />
 
       {/* CONTENIDO */}
-      <main className="relative z-10 min-h-screen text-white bg-gradient-to-b from-black/40 via-black/70 to-black">
+      <main className="relative z-10 min-h-screen text-white bg-gradient-to-b from-black/1 via-black/0 ">
 
         {/* HERO */}
         <section className="min-h-[70vh] flex flex-col justify-center items-center text-center px-6">

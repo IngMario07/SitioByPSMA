@@ -23,22 +23,18 @@ export const Contacto = () => {
 
       {/* 🔥 PARTÍCULAS DE FONDO */}
       <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          preset: "fire",
-          background: {
-            color: "#0b0f1a",
-          },
-          fullScreen: {
-            enable: true,
-            zIndex: -1,
-          },
-        }}
-      />
+              id="tsparticles"
+              init={particlesInit}
+              style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", zIndex: -1 }}
+              options={{
+                preset: "fire",
+                background: { color: "#1a202c00" },
+                fullScreen: { enable: false },
+              }}
+            />
 
       {/* CONTENIDO */}
-      <main className="relative z-10 min-h-screen text-white bg-gradient-to-b from-black/40 via-black/70 to-black">
+      <main className="relative z-10 min-h-screen text-white bg-gradient-to-b from-black/40 via-black/5 ">
 
         {/* HERO */}
         <section className="min-h-[60vh] flex flex-col justify-center items-center text-center px-6">
