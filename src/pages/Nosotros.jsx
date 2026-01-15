@@ -152,6 +152,22 @@ export const Nosotros = () => {
               <strong>Fire Chief:</strong> Lic. Juan González
             </p>
 
+            {/* OVERSIGHT / COMMISSIONER */}
+            <h3 className="text-2xl font-semibold text-gray-200">
+              Oversight & Accountability
+            </h3>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              In order to strengthen transparency and internal accountability, the General
+              Assembly appointed a <strong>Supervisory Commissioner</strong> to oversee
+              compliance with internal agreements, operational guidelines, and institutional
+              integrity.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              <strong>Supervisory Commissioner:</strong> Ing. José César Guerrero Zárate
+            </p>
+
             {/* LEGAL */}
             <h3 className="text-2xl font-semibold text-gray-200">
               Legal Counsel
