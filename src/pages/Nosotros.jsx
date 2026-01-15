@@ -8,6 +8,8 @@ import { useCallback } from "react";
 import ByP00 from "../assets/images/ByP00.png";
 import ByP03 from "../assets/images/ByP03.png";
 import ByP04 from "../assets/images/ByP04.png";
+//import ByP05 from "../assets/images/ByP05.png";
+import Logo from "../assets/images/Logo.png"
 import Dragones1 from "../assets/images/Dragones1.png";
 import Unidades1 from "../assets/images/Unidades1.png";
 
@@ -54,8 +56,7 @@ export const Nosotros = () => {
               created with the commitment to protect, assist and save lives in
               emergency situations.
               <br /><br />
-              Let's Go For A Firefighters and Paramedics Association At The Level
-              Our City Deserves!
+              We are working towards a Firefighters and Paramedics Association that our city deserves!
             </p>
           </motion.div>
         </section>
@@ -88,6 +89,94 @@ export const Nosotros = () => {
           </motion.div>
         </section>
 
+        {/* STRUCTURE */}
+        <section className="px-8">
+          <motion.div
+            className="
+      max-w-4xl mx-auto
+      bg-white/10 backdrop-blur-md
+      border border-white/10
+      rounded-3xl p-10
+      text-center space-y-8
+      shadow-xl"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold">
+              General Assembly, Board of Directors & Command Structure
+            </h2>
+
+            {/* ASSEMBLY */}
+            <p className="text-lg text-gray-300 leading-relaxed">
+              On <strong>January 13, 2026</strong>, the <strong>General Assembly of Members</strong>,
+              the supreme governing authority of Bomberos y Paramédicos SMA, was formally convened
+              in accordance with the Association’s bylaws.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Through this democratic process, the Assembly exercised its authority to elect and
+              ratify the governing bodies responsible for the administration, operation, and legal
+              representation of the Association.
+            </p>
+
+            {/* BOARD */}
+            <h3 className="text-2xl font-semibold text-gray-200">
+              Board of Directors (2026–2028)
+            </h3>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              By majority vote, the General Assembly elected the following <strong>Board of Directors</strong>,
+              which serves as the administrative and representative body of the Association.
+            </p>
+
+            <ul className="text-left list-disc list-inside space-y-2 text-gray-300 max-w-3xl mx-auto">
+              <li><strong>President:</strong> Lic. Carlos González Sandoval</li>
+              <li><strong>Secretary:</strong> Firefighter Manuel Buenrostro Olvera</li>
+              <li><strong>Treasurer:</strong> LCP Claudia Abigail Torres Téllez</li>
+              <li><strong>Board Member:</strong> Firefighter John Wesley Burke González</li>
+              <li><strong>Board Member:</strong> Dr. Juan Olvera Flores</li>
+            </ul>
+
+            {/* FIRE CHIEF */}
+            <h3 className="text-2xl font-semibold text-gray-200">
+              Fire Chief
+            </h3>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              In accordance with the Association’s bylaws, the <strong>Fire Chief</strong> is a
+              statutory governing body responsible for operational command, emergency response,
+              and technical leadership.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              <strong>Fire Chief:</strong> Lic. Juan González
+            </p>
+
+            {/* LEGAL */}
+            <h3 className="text-2xl font-semibold text-gray-200">
+              Legal Counsel
+            </h3>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              The Association is supported by a <strong>General Legal Counsel</strong>, a statutory
+              body that provides legal advice and representation in alignment with Assembly and
+              Board resolutions.
+            </p>
+
+            {/* CLOSING */}
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Together, these governing bodies ensure transparency, institutional strength,
+              operational excellence, and a firm commitment to serving our community.
+            </p>
+
+            <p className="font-semibold text-gray-200">
+              We are working towards a Firefighters and Paramedics Association that our city deserves!
+            </p>
+          </motion.div>
+        </section>
+
+
+
         {/* TIMELINE */}
         <section className="px-6">
           <div className="max-w-6xl mx-auto grid gap-12">
@@ -97,6 +186,7 @@ export const Nosotros = () => {
               { year: "2023", img: Dragones1, text: "Creation of the Dragons Reds children's emergency education group." },
               { year: "2023", img: ByP03, text: "Acquisition of ByP03 through Contribution and events." },
               { year: "2024", img: ByP04, text: "Contribution of equipment: Motorized unit (ByP04) and Self-Contained Breathing Apparatus (SCBA) equipment by SAN MIGUEL COMMUNITY FOUNDATION." },
+              //{ year: "2026", img: Logo, text: "Contribution of emergency vehicle · Fire truck donated by [Donor name]" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -150,64 +240,14 @@ export const Nosotros = () => {
           </div>
         </section>
 
-        {/* STRUCTURE */}
-        <section className="px-6">
-  <motion.div
-    className="
-      max-w-4xl mx-auto
-      bg-white/10 backdrop-blur-md
-      border border-white/10
-      rounded-3xl p-10
-      text-center space-y-8
-      shadow-xl
-    "
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-  >
-    <h2 className="text-3xl sm:text-4xl font-bold">
-      General Assembly & Board of Directors
-    </h2>
 
-    <p className="text-lg text-gray-300 leading-relaxed">
-      On <strong>January 13, 2026</strong>, the General Assembly of Bomberos y
-      Paramédicos SMA was held, reaffirming our democratic principles and
-      institutional strength.
-    </p>
-
-    <p className="text-lg text-gray-300 leading-relaxed">
-      As a result of this process, a new <strong>Board of Directors for the
-      2026–2028 term</strong> was elected by majority vote, assuming the
-      responsibility of leading the Association’s strategic and operational
-      direction.
-    </p>
-
-    <ul className="text-left list-disc list-inside space-y-2 text-gray-300 max-w-3xl mx-auto">
-      <li><strong>President:</strong> Lic. Carlos González Sandoval</li>
-      <li><strong>Secretary:</strong> Firefighter Manuel Buenrostro Olvera</li>
-      <li><strong>Treasurer:</strong> LCP Claudia Abigail Torres Téllez</li>
-      <li><strong>Board Member:</strong> Firefighter John Wesley Burke González</li>
-      <li><strong>Board Member:</strong> Dr. Juan Olvera Flores</li>
-    </ul>
-
-    <p className="text-lg text-gray-300 leading-relaxed">
-      The new Board is committed to transparency, operational excellence,
-      continuous training, and strengthening emergency response services for
-      our community.
-    </p>
-
-    <p className="font-semibold text-gray-200">
-      Working together for a Firefighters and Paramedics Association at the
-      level our city deserves.
-    </p>
-  </motion.div>
-</section>
 
 
       </main>
 
-      <br/>
-      <br/>
-      
+      <br />
+      <br />
+
 
       <Footer />
     </>

@@ -66,6 +66,10 @@ export function Footer() {
           >
             Bomberos y Paramédicos SMA
           </motion.h2>
+          {/* ESLOGAN */}
+          <p className="mt-2 text-sm md:text-base text-gray-300 italic tracking-wide max-w-xl">
+            We are working towards a Firefighters and Paramedics Association that our city deserves!
+          </p>
         </div>
 
         {/* LINKS */}
