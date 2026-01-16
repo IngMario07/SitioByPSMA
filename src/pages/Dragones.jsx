@@ -25,7 +25,7 @@ export const Dragones = () => {
     <>
       <Navbar />
 
-      {/* 🔥 PARTÍCULAS */}
+      {/* 🔥 PARTICLES */}
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -42,18 +42,18 @@ export const Dragones = () => {
         <section className="relative h-[90vh] w-full flex items-center justify-center text-center">
           <img
             src={BannerDragonesRojos}
-            alt="Club Infantil Dragones Rojos"
+            alt="Red Dragons Children's Club"
             className="absolute inset-0 w-full h-full object-cover"
           />
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[1.5px]"></div>
 
-          {/* Contenido */}
+          {/* Content */}
           <div className="relative z-10 flex flex-col items-center px-6">
             <motion.img
               src={LogoDragonesRojos}
-              alt="Logo Dragones Rojos"
+              alt="Red Dragons Logo"
               className="w-48 sm:w-56 md:w-64 mb-6 drop-shadow-2xl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -66,7 +66,7 @@ export const Dragones = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              Club Infantil Dragones Rojos
+              Red Dragons Children's Club
             </motion.h1>
 
             <motion.p
@@ -75,13 +75,13 @@ export const Dragones = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              Formando a las nuevas generaciones en primeros auxilios,
-              prevención, valores y cultura de protección civil.
+              Training new generations in first aid, prevention, values,
+              and a culture of civil protection.
             </motion.p>
           </div>
         </section>
 
-        {/* ¿QUIÉNES SOMOS? */}
+        {/* WHO WE ARE */}
         <section className="max-w-6xl mx-auto px-6 py-32">
           <motion.div
             className="bg-black/50 backdrop-blur-xl rounded-3xl p-10 border border-white/10 shadow-xl text-center"
@@ -90,38 +90,38 @@ export const Dragones = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              ¿Qué es el Club Infantil Dragones Rojos?
+              What is the Red Dragons Children's Club?
             </h2>
 
             <p className="text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              El <strong>Club Infantil Dragones Rojos</strong> es un programa
-              educativo y recreativo enfocado en niñas y niños, donde aprenden
-              de manera segura y divertida qué hacer ante una emergencia,
-              cómo prevenir riesgos y cómo ayudar a los demás.
+              The <strong>Red Dragons Children's Club</strong> is an educational
+              and recreational program focused on children, where they safely
+              and playfully learn what to do in an emergency, how to prevent
+              risks, and how to help others.
               <br /><br />
-              Nuestro objetivo es sembrar desde temprana edad una cultura
-              de responsabilidad, empatía y cuidado de la vida.
+              Our goal is to instill from an early age a culture of responsibility,
+              empathy, and care for life.
             </p>
           </motion.div>
         </section>
 
-        {/* APRENDIZAJES */}
+        {/* LEARNING AREAS */}
         <section className="max-w-6xl mx-auto px-6 mb-32 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               icon: <FaHandsHelping />,
-              title: "Primeros Auxilios",
-              text: "Conocimientos básicos adaptados a la edad de cada niño."
+              title: "First Aid",
+              text: "Basic knowledge adapted to each child's age."
             },
             {
               icon: <FaFireExtinguisher />,
-              title: "Prevención y Emergencias",
-              text: "Qué hacer antes, durante y después de una emergencia."
+              title: "Prevention & Emergencies",
+              text: "What to do before, during, and after an emergency."
             },
             {
               icon: <FaHeart />,
-              title: "Valores Humanos",
-              text: "Trabajo en equipo, empatía, respeto y solidaridad."
+              title: "Human Values",
+              text: "Teamwork, empathy, respect, and solidarity."
             }
           ].map((item, index) => (
             <motion.div
@@ -139,7 +139,7 @@ export const Dragones = () => {
           ))}
         </section>
 
-        {/* EXPERIENCIAS */}
+        {/* EXPERIENCES */}
         <section className="max-w-6xl mx-auto px-6 mb-32">
           <motion.div
             className="bg-black/50 backdrop-blur-xl rounded-3xl p-10 border border-white/10 shadow-xl grid md:grid-cols-2 gap-10 items-center"
@@ -149,31 +149,30 @@ export const Dragones = () => {
           >
             <div>
               <h2 className="text-3xl font-bold mb-4">
-                Experiencias que Inspiran
+                Inspiring Experiences
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                Las y los integrantes del club tienen la oportunidad de visitar
-                estaciones de bomberos, conocer a personal operativo,
-                aprender de sus experiencias y comprender la importancia del
-                trabajo en equipo durante una emergencia.
+                Club members have the opportunity to visit fire stations,
+                meet operational personnel, learn from their experiences,
+                and understand the importance of teamwork during emergencies.
                 <br /><br />
-                Además, el club está abierto a recibir invitaciones de otras
-                estaciones y organizaciones que deseen compartir conocimientos
-                y vivencias con las nuevas generaciones.
+                The club is also open to invitations from other stations
+                and organizations wishing to share knowledge and experiences
+                with new generations.
               </p>
             </div>
 
             <div className="flex justify-center">
               <img
                 src={LogoDragonesRojos}
-                alt="Dragones Rojos"
+                alt="Red Dragons"
                 className="w-64 opacity-90"
               />
             </div>
           </motion.div>
         </section>
 
-        {/* APOYO A LA COMUNIDAD */}
+        {/* COMMUNITY SUPPORT */}
         <section className="max-w-6xl mx-auto px-6 mb-32 text-center">
           <motion.div
             className="bg-black/60 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-xl space-y-6"
@@ -184,99 +183,87 @@ export const Dragones = () => {
             <FaUsers className="text-5xl text-red-500 mx-auto" />
 
             <h2 className="text-3xl font-bold">
-              Apoya a las Nuevas Generaciones
+              Support New Generations
             </h2>
 
             <p className="text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              La tecnología, el equipamiento y los materiales educativos
-              evolucionan constantemente. Por ello, invitamos a la comunidad,
-              empresas y organizaciones a apoyar este proyecto.
+              Technology, equipment, and educational materials are constantly
+              evolving. For this reason, we invite the community, companies,
+              and organizations to support this project.
               <br /><br />
-              Toda aportación —desde la más pequeña hasta la más grande—
-              contribuye directamente a fortalecer la formación de niñas y niños,
-              brindándoles mejores herramientas para aprender y crecer seguros.
+              Every contribution — from the smallest to the largest —
+              directly strengthens the education of children, providing
+              them with better tools to learn and grow safely.
             </p>
           </motion.div>
         </section>
 
-        {/* DIRECCIÓN */}
-<section className="max-w-4xl mx-auto px-6 mb-32 text-center">
-  <motion.div
-    className="
-      bg-black/60 backdrop-blur-xl
-      rounded-3xl p-12
-      border border-white/10 shadow-xl space-y-6
-    "
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-  >
-    <FaChild className="text-5xl text-red-500 mx-auto" />
+        {/* PROGRAM MANAGEMENT */}
+        <section className="max-w-4xl mx-auto px-6 mb-32 text-center">
+          <motion.div
+            className="bg-black/60 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-xl space-y-6"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <FaChild className="text-5xl text-red-500 mx-auto" />
 
-    <h2 className="text-3xl sm:text-4xl font-extrabold">
-      Dirección del Programa
-    </h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold">
+              Program Management
+            </h2>
 
-    <p className="text-2xl font-semibold text-gray-100">
-      Pilar Gallegos
-    </p>
+            <p className="text-2xl font-semibold text-gray-100">
+              Pilar Gallegos
+            </p>
 
-    <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
-      Responsable de coordinar, supervisar y fortalecer las actividades
-      formativas del <strong>Club Infantil Dragones Rojos</strong>,
-      asegurando un entorno seguro, educativo y motivador para
-      las niñas y los niños que forman parte del programa.
-    </p>
-  </motion.div>
-</section>
+            <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Responsible for coordinating, supervising, and strengthening
+              the educational activities of the
+              <strong> Red Dragons Children's Club</strong>,
+              ensuring a safe, educational, and motivating environment
+              for the children who are part of the program.
+            </p>
+          </motion.div>
+        </section>
 
-        {/* REDES */}
-<section className="max-w-5xl mx-auto px-6 mb-40 text-center">
-  <motion.div
-    className="
-      bg-gradient-to-br from-blue-600/20 via-black/60 to-black/80
-      backdrop-blur-xl rounded-3xl p-12
-      border border-white/10 shadow-xl space-y-8
-    "
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    viewport={{ once: true }}
-  >
-    <h2 className="text-3xl sm:text-4xl font-extrabold">
-      Síguenos en Redes Sociales
-    </h2>
+        {/* SOCIAL MEDIA */}
+        <section className="max-w-5xl mx-auto px-6 mb-40 text-center">
+          <motion.div
+            className="bg-gradient-to-br from-blue-600/20 via-black/60 to-black/80 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-xl space-y-8"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl sm:text-4xl font-extrabold">
+              Follow Us on Social Media
+            </h2>
 
-    <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
-      A través de nuestras redes compartimos actividades, aprendizajes,
-      visitas a estaciones de bomberos, eventos especiales y momentos
-      que fortalecen la formación de nuestras niñas y niños.
-    </p>
+            <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Through our social media we share activities, learning moments,
+              visits to fire stations, special events, and experiences that
+              strengthen the education of our children.
+            </p>
 
-    <div className="flex justify-center">
-      <motion.a
-        href="https://www.facebook.com/clubinfantil.dragonesrojos"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-          inline-flex items-center gap-4
-          bg-blue-600 hover:bg-blue-700
-          px-10 py-5 rounded-2xl
-          font-bold text-lg shadow-lg
-        "
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <FaFacebookF className="text-2xl" />
-        Facebook · Dragones Rojos
-      </motion.a>
-    </div>
+            <div className="flex justify-center">
+              <motion.a
+                href="https://www.facebook.com/clubinfantil.dragonesrojos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-2xl font-bold text-lg shadow-lg"
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FaFacebookF className="text-2xl" />
+                Facebook · Red Dragons
+              </motion.a>
+            </div>
 
-    <p className="text-sm text-gray-400">
-      Síguenos y forma parte de esta comunidad que cree en la educación
-      y la prevención desde la infancia.
-    </p>
-  </motion.div>
-</section>
+            <p className="text-sm text-gray-400">
+              Follow us and be part of a community that believes in education
+              and prevention from childhood.
+            </p>
+          </motion.div>
+        </section>
 
       </main>
 
